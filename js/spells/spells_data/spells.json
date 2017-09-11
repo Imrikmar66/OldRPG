@@ -1,0 +1,9 @@
+SkyHit:{
+	spellName: "Frappe du ciel",
+	spellSprite: "img/SkyHit.png",
+	spellSpriteWidth: 100,
+	spellSpriteHeight: 100,
+	spellSpriteFrames: 5,
+	spellFunctionFilepath: "",
+	spellType: ""
+}

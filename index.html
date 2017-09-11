@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Epic game</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/jquery-1.11.1.min.js"></script>
+        <!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+        <!--<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+        <script src="jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="PathFinding/visual/lib/pathfinding-browser.min.js"></script>
+    </head>
+
+<body oncontextmenu="return false;">
+	<div id="game_closed">
+		<h1>The game is offline</h1>
+	</div>
+	<!--
+	<div id="select">
+		<form>
+			<input name="name" type="text">
+			<input name="urlSprite" type="text">
+			<input name="urlImage" type="text">
+			<input name="width" type="text">
+			<input name="height" type="text">
+			<input name="classId" type="text">
+			<input name="canvasW" type="text">
+			<input name="canvasH" type="text">
+		</form>
+	</div>
+	-->
+	<div class="class"></div>
+	<canvas id="mon_canvas"> 
+	  Désolé, votre navigateur ne supporte pas la balise HTML5 canvas
+	</canvas>
+
+	<div class="info"><div id="cache">
+		<div class='image_container'>
+			<div class='image'></div>
+		</div>
+		<div class='mes_infos'>
+			<div class='Capacities'>
+				<div class="spell spell_a"><div class="cmd">A<div class="cd"></div></div></div>
+				<div class="spell spell_z"><div class="cmd">Z<div class="cd"></div></div></div>
+				<div class="spell spell_e"><div class="cmd">E<div class="cd"></div></div></div>
+				<div class="spell spell_r"><div class="cmd">R<div class="cd"></div></div></div>
+				<div class="spell spell_t"><div class="cmd">T<div class="cd"></div></div></div>
+			</div>
+			<div class='lifeAndMana'>
+				<div id="lifeInfoContainer">
+					<span class="nameInfo">Health: </span><div class="range" id="lifeInfo"><div class="change lifeInfo"></div></div><span id="lifeInfoValue">100</span> / <span id="lifeInfoMax">100</span><br />
+				</div>
+				<div id="manaInfoContainer">
+					<span class="nameInfo">Mana: </span><div class="range" id="manaInfo"><div class="change manaInfo"></div></div><span id="manaInfoValue">100</span> / <span id="manaInfoMax">100</span><br />
+				</div>
+			</div>
+			<div class='Stuff'></div>
+		</div>
+		<div id="all_attr">
+			<div class="attribute" id="attr_type"><div>Pal</div></div>
+			<div class="attribute" id="attr_level"><div>10</div></div>
+			<div class="attribute" id="attr_strenght"><div>5</div></div>
+			<div class="attribute" id="attr_thougness"><div>10</div></div>
+			<div class="attribute" id="attr_speed"><div>30</div></div>
+			<div class="attribute" id="attr_weapon"><div>S</div></div>
+			<div class="attribute" id="attr_armor"><div>H</div></div>
+		</div>
+	</div></div>
+	<script src="js/socket.io.js"></script>
+	<script src="js/oxHR.js"></script>
+	<script src="js/class/Map.js"></script>
+	<script src="js/class/Spell.js"></script>
+	<script src="js/class/Element.js"></script>
+	<script src="js/class/Armor.js"></script>
+	<script src="js/class/Character.js"></script>
+	<script src="js/class/GameClass.js"></script>
+	<script src="js/class/Weapon.js"></script>
+	<script src="js/client.js"></script>
+</body>
+</html>
